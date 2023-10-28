@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btn4.setOnClickListener {
-            val userAge = 25
+
+            val userAge = binding.edtUserAge.text.toString().toInt()
 
 //            if(userAge >= 20){
 //                Toast.makeText(this, "성인입니다", Toast.LENGTH_SHORT).show()
