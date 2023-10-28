@@ -60,5 +60,11 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        binding.btn5.setOnClickListener {
+            val userName = binding.edtName.text.toString()
+
+            Toast.makeText(this, "${userName}님 환영합니다", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }
