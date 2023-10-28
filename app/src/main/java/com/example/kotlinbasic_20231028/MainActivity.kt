@@ -3,6 +3,7 @@ package com.example.kotlinbasic_20231028
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.kotlinbasic_20231028.databinding.ActivityMainBinding
 
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btn1.setOnClickListener {
             Log.d("메인화면","로그버튼 클릭됨")
+        }
+        binding.btn2.setOnClickListener {
+            //토스트 버튼이 틀릭되면 =>토스트 띄우기
+
+            Toast.makeText(this, "토스트버튼 눌림", Toast.LENGTH_SHORT).show()
         }
 
     }
