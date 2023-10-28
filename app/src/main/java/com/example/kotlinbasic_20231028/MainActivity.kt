@@ -32,5 +32,32 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, myName, Toast.LENGTH_SHORT).show()
 
         }
+
+        binding.btn4.setOnClickListener {
+            val userAge = 25
+
+//            if(userAge >= 20){
+//                Toast.makeText(this, "성인입니다", Toast.LENGTH_SHORT).show()
+//            }else if(userAge >=17){
+//                Toast.makeText(this, "고딩입니다", Toast.LENGTH_SHORT).show()
+//            }else{
+//                Toast.makeText(this, "중딩 또는 그 이하입니다", Toast.LENGTH_SHORT).show()
+//            }
+
+            when(userAge){
+                25 -> {
+                    Toast.makeText(this, "25살 입니다", Toast.LENGTH_SHORT).show()
+                }
+                27,28,29 ->{
+                    Toast.makeText(this, "20대 후반입니다", Toast.LENGTH_SHORT).show()
+                }
+                in 30..39 ->{
+                    Toast.makeText(this, "30대 입니다", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+
+        }
+
     }
 }
