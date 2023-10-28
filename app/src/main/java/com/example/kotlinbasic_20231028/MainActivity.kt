@@ -22,5 +22,15 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "토스트버튼 눌림", Toast.LENGTH_SHORT).show()
         }
 
+
+        binding.btn3.setOnClickListener {
+
+            var myName : String
+
+            myName = "박진우"
+
+            Toast.makeText(this, myName, Toast.LENGTH_SHORT).show()
+
+        }
     }
 }
